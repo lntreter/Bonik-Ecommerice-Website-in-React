@@ -1,3 +1,7 @@
+const dbdata = (item){
+  
+
+}
 const Sdata = {
   shopItems: [
     {

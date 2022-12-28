@@ -3,6 +3,7 @@ import "./App.css"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Header from "./common/header/Header"
 import Pages from "./pages/Pages"
+import Page2 from "./pages/page2"
 import Data from "./components/Data"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
@@ -78,8 +79,10 @@ function App() {
           <Route path='/cart' exact>
             <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
           </Route>
+          <Route path='/shop' exact>
+          <Page2 productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
+          </Route>
         </Switch>
-        <Footer />
       </Router>
     </>
   )
